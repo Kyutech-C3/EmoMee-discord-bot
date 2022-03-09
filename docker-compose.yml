@@ -1,0 +1,11 @@
+version: "3"
+services:
+  bot:
+    build: .
+    volumes:
+      - .:/opt
+    env_file:
+      - .env
+
+volumes:
+  dbdata: null
