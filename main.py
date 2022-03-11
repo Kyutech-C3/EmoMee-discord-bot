@@ -30,6 +30,11 @@ async def on_voice_state_update(member, before, after):
       # 退室
       if before.channel is not None and before.channel.id in watchChannelList[str(member.guild.id)]:
         try:
+          remain_user_id_list = list(before.channel.voice_states.keys())
+          if len(remain_user_id_list) == 0:
+            delete_room(member.guild.id, before.channel.id)
+            watchChannelList[str(member.guild.id)].remove(before.channel.id)
+            return
           exit_user(member.guild.id, before.channel.id, member.id)
           return
         except ExitUserException as e:
