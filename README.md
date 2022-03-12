@@ -12,3 +12,8 @@ EmoMeeをDiscordを使いながら手軽に使えるようにするためのBot�
 7. コミュニケーションが終わり、DiscordVCから全員抜ければ自動的にEmoMeeのルームが自動で閉じられます。 
 
 **突貫工事で作成したためバグがあると思いますがご了承ください。**
+
+# 関連リポジトリ
+
+- [EmoMee フロントエンド](https://github.com/Kyutech-C3/EmoMee-frontend)
+- [EmoMee バックエンド](https://github.com/Kyutech-C3/EmoMee-backend)
